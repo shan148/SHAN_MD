@@ -3,15 +3,15 @@ const yts = require("yt-search");
 
 cmd(
   {
-    pattern: "yts",
-    alias: ["yts", "youtubesearch"],
-    react: "🔎",
+    pattern: "video",
+    alias: ["yt", "youtube"],
+    react: "▶",
     desc: "Search YouTube videos",
-    category: "search",
+    category: "download",
     filename: __filename,
   },
   async (
-    danuwa,
+    shan,
     mek,
     m,
     {
@@ -22,9 +22,9 @@ cmd(
     }
   ) => {
     try {
-      if (!q) return reply("*Please provide a search query!* 🔍");
+      if (!q) return reply("*Please provide a search quary* 🤦‍♀️");
 
-      reply("*Searching YouTube for you...* ⌛");
+      reply("*Searching on YouTube for you...* ⌛");
 
       const search = await yts(q);
 
@@ -37,14 +37,14 @@ cmd(
         `🎬 *${i + 1}. ${v.title}*\n📅 ${v.ago} | ⌛ ${v.timestamp} | 👁️ ${v.views.toLocaleString()} views\n🔗 ${v.url}`
       )).join("\n\n");
 
-      const caption = `  
-Your youtube search results
+      const caption = `    
+𝒀𝒐𝒖𝒓 𝘠𝘖𝘜𝘛𝘜𝘉𝘌 𝒔𝒆𝒂𝒓𝒄𝒉 𝒓𝒆𝒔𝒖𝒍𝒕𝒔 𝒉𝒆𝒓𝒆...
 ─────────────────────────
-🔎 *Query*: ${q}
+🎀 *Query*: ${q}
 ${formattedResults}
    `;
 
-      await danuwa.sendMessage(
+      await shan.sendMessage(
         from,
         {
           image: {
