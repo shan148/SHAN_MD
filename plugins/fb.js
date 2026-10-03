@@ -40,13 +40,13 @@ cmd(
     }
   ) => {
     try {
-      if (!q) return reply("*Please provide a valid Facebook video URL!* ❤️");
+      if (!q) return reply("*Please provide a valid Facebook video URL!* 🙃");
 
       const fbRegex = /(https?:\/\/)?(www\.)?(facebook|fb)\.com\/.+/;
       if (!fbRegex.test(q))
         return reply("*Invalid Facebook URL! Please check and try again.* ☹️");
 
-      reply("*Downloading your video...* ❤️");
+      reply("*Downloading your video...* 🎀");
 
       const result = await getFbVideoInfo(q);
       if (!result || (!result.sd && !result.hd)) {
@@ -83,7 +83,7 @@ Your fb video
         { quoted: mek }
       );
 
-      return reply("Thank you for using DANUWA-MD");
+      return reply("𝑻𝒉𝒂𝒏𝒌 𝒚𝒐𝒖 𝒇𝒐𝒓 𝒚𝒐𝒖𝒔𝒊𝒏𝒈 𝑺𝑯𝑨𝑵-𝑴𝑫 𝒘𝒉𝒂𝒕𝒔𝒂𝒑𝒑 𝒃𝒐𝒕 ...");
     } catch (e) {
       console.error(e);
       reply(`*Error:* ${e.message || e}`);
