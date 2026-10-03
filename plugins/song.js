@@ -6,12 +6,12 @@ cmd(
   {
     pattern: "song",
     react: "🎶",
-    desc: "Download Song",
+    desc: "Download Song your song",
     category: "download",
     filename: __filename,
   },
   async (
-    danuwa,
+    shan,
     mek,
     m,
     {
@@ -53,6 +53,8 @@ Song downloader
 📅 *Uploaded:* ${data.ago}
 👀 *Views:* ${data.views.toLocaleString()}
 🔗 *Watch Here:* ${data.url}
+────────────────────────
+𝑺𝑯𝑨𝑵-𝑴𝑫
 `;
 
       await danuwa.sendMessage(
@@ -94,7 +96,7 @@ Song downloader
         { quoted: mek }
       );
 
-      return reply("✅ Thank you");
+      return reply("𝑻𝒉𝒂𝒏𝒌𝒔 𝒇𝒐𝒓 𝒖𝒔𝒊𝒏𝒈 𝑺𝑯𝑨𝑵-𝑴𝑫 𝒘𝒉𝒂𝒕𝒔𝒂𝒑𝒑 𝒃𝒐𝒕 ✅");
     } catch (e) {
       console.log(e);
       reply(`❌ *Error:* ${e.message} 😞`);
