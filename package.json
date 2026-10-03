@@ -33,5 +33,6 @@
     "util": "^0.12.5",
     "vm": "^0.1.0"
     "@xaviabot/fb-downloader": "^1.0.14",
+    "yt-search": "^2.13.1"
   }
 }
