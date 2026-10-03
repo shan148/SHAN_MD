@@ -67,7 +67,7 @@ Your fb video
         from,
         {
           image: {
-            url: "https://github.com/DANUWA-MD/DANUWA-MD/blob/main/images/fbdownloader.png?raw=true",
+            url: "https://raw.githubusercontent.com/shan148/SHAN_MD/refs/heads/main/images/file_00000000568c8211b951933d2e52545e.png",
           },
           caption: desc,
         },
