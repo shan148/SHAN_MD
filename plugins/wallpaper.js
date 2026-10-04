@@ -4,7 +4,7 @@ const axios = require("axios");
 
 cmd(
   {
-    pattern: "wall",
+    pattern: "img",
     alias: ["wallpaper"],
     react: "🖼️",
     desc: "Download HD Wallpapers",
@@ -43,7 +43,7 @@ cmd(
         from,
         {
           image: {
-            url: "https://github.com/DANUWA-MD/DANUWA-MD/blob/main/images/DANUWA-MD.png?raw=true",
+            url: "https://raw.githubusercontent.com/shan148/SHAN_MD/refs/heads/main/images/file_00000000d9d082078cdb715da44189ed.png",
           },
           caption: header,
         },
