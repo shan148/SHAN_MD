@@ -107,7 +107,7 @@ cmd(
 
       const data = await ytmp4(video.url, {
         format: "mp4",
-        videoQuality: "360",
+        videoQuality: "720",
       });
 
       if (!data?.url) return reply("❌ Failed to download video");
