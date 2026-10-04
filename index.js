@@ -89,7 +89,7 @@ async function connectToWA() {
 
       const up = `𝘚𝘏𝘈𝘕-𝘔𝘋 𝘤𝘰𝘯𝘯𝘦𝘤𝘵𝘦𝘥 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘧𝘶𝘭𝘭𝘺 🤝💥 \n\nPREFIX: ${prefix}`;
       await SHAN.sendMessage(ownerNumber[0] + "@s.whatsapp.net", {
-        image: { url: `https://raw.githubusercontent.com/shan148/SHAN_MD/refs/heads/main/images/file_00000000be8882119b280e7b75312d33.png` },
+        image: { url: `https://raw.githubusercontent.com/shan148/SHAN_MD/refs/heads/main/images/file_00000000eddc82078f0435f8ee102ddc.png` },
         caption: up
       });
 
